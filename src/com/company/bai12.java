@@ -11,10 +11,9 @@ public class bai12 {
         x= sc.nextInt();
         System.out.println("Nhap n: ");
         n= sc.nextInt();
-        int sum =0;
-        long T = 1;
-        for (int i = 0; i < n; i++){
-            sum += T *= x;
+        long sum =0;
+        for (int i = 1; i <= n; i++){
+            sum += Math.pow(x,i);
         }
         System.out.println(sum);
     }
